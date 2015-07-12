@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_layout_id" type="id"/>
+    <item name="tag_card_presenter" type="id"/>
+    <item name="tag_bind_value" type="id"/>
+</resources>

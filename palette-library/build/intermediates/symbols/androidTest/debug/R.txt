@@ -1,0 +1,6 @@
+int attr bindValue 0x7f010000
+int id tag_bind_value 0x7f020000
+int id tag_card_presenter 0x7f020001
+int id tag_layout_id 0x7f020002
+int[] styleable Binding { 0x7f010000 }
+int styleable Binding_bindValue 0
