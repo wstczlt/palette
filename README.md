@@ -1,2 +1,2 @@
-# mvp
-a ui framework based on MVVM concept.
+# Palette
+It's a flexible ui framework based on MVVM concept.
