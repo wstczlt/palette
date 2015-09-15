@@ -41,3 +41,4 @@ Example:
 > 例如，不同User的卡片上元素可能不一样，A卡片可能是username, avatar, create_time, summary这些，B卡片可能只有username, avatar这两个。此时如果为了复用把username和avatar的Bind逻辑拆出去则显得有点繁琐，因为实际这两个字段的绑定只有两行代码(setText, setUrl)。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android基于MVVM的Data-Binding框架提供了新的思路，即在XML中定义好需要使用的字段，运行时从绑定对象中取出对应的属性设置到View中，这个绑定的逻辑就是BindingPresenter，它支持对简单属性的赋值和简单运算。
+#未完待续
