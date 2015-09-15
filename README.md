@@ -35,6 +35,7 @@ Example:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;综上，Presenter的拆分是灵活的，原则是可预见的需要复用的先拆分，其它的尽可能合并，直到发现需要复用其中部分逻辑的时候，把这部分逻辑再拆分出去。<br/>
 
 **Data-Binding支持**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Palette是为了提高Presenter的可复用性，因此在应对通用(简单)的Bind需求时需要更简单通用一些。
 	
 
