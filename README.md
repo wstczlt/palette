@@ -34,12 +34,3 @@ Example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;综上，Presenter的拆分是灵活的，原则是可预见的需要复用的先拆分，其它的尽可能合并，直到发现需要复用其中部分逻辑的时候，把这部分逻辑再拆分出去。<br/>
 
-**Data-Binding支持**
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Palette是为了提高Presenter的可复用性，因此在应对通用(简单)的Bind需求时需要更简单通用一些。
-	
-
-> 例如，不同User的卡片上元素可能不一样，A卡片可能是username, avatar, create_time, summary这些，B卡片可能只有username, avatar这两个。此时如果为了复用把username和avatar的Bind逻辑拆出去则显得有点繁琐，因为实际这两个字段的绑定只有两行代码(setText, setUrl)。
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android基于MVVM的Data-Binding框架提供了新的思路，即在XML中定义好需要使用的字段，运行时从绑定对象中取出对应的属性设置到View中，这个绑定的逻辑就是BindingPresenter，它支持对简单属性的赋值和简单运算。
-#未完待续
