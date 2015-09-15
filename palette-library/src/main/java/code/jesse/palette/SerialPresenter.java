@@ -2,10 +2,9 @@ package code.jesse.palette;
 
 
 /**
- * Presenter序列组合成的Presenter，用于将多个Presenter单元都作用于一个viewId上的情况。
- * 利用SerialPresenter可以将复杂Presenter逻辑拆分成多个串行的Presenter，以提高复用程度，
+ * Presenter序列组合成的Presenter，用于将多个Presenter单元都作用于一个viewId上的情况。 利用SerialPresenter可以将复杂Presenter逻辑拆分成多个串行的Presenter，以提高复用程度，
  * 以及提高代码可读性。
- * 
+ * <p/>
  * 请注意，presenters是有序的。
  *
  * @author zhulantian@gmail.com

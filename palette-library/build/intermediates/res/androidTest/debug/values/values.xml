@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="Binding"><attr format="string" name="bindValue"/></declare-styleable>
-    <!-- From: file:/Users/zhulantian1/workspace/github/palette/palette-library/build/intermediates/bundles/debug/res/values/values.xml -->
-    <eat-comment/>
-    <item name="tag_bind_value" type="id"/>
-    <item name="tag_card_presenter" type="id"/>
-    <item name="tag_layout_id" type="id"/>
-</resources>

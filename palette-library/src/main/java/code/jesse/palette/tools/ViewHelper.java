@@ -142,7 +142,6 @@ public class ViewHelper {
     }
 
 
-
     /**
      * Return a new AQuery object that uses the found view as a root.
      *
@@ -155,10 +154,8 @@ public class ViewHelper {
     }
 
     /**
-     * Return a new AQuery object that uses the found parent as a root.
-     * If no parent with matching id is found, operating view will be null and isExist() will return
-     * false.
-     * 
+     * Return a new AQuery object that uses the found parent as a root. If no parent with matching id is found,
+     * operating view will be null and isExist() will return false.
      *
      * @param id the parent id
      * @return new AQuery object
@@ -184,9 +181,9 @@ public class ViewHelper {
 
     /**
      * Recycle this AQuery object.
-     * 
-     * The method is designed to avoid recreating an AQuery object repeatedly, such as when in list
-     * adapter getView method.
+     * <p/>
+     * The method is designed to avoid recreating an AQuery object repeatedly, such as when in list adapter getView
+     * method.
      *
      * @param root The new root of the recycled AQuery.
      * @return self
@@ -268,8 +265,7 @@ public class ViewHelper {
     }
 
     /**
-     * Set the text of a TextView with localized formatted string
-     * from application's package's default string table
+     * Set the text of a TextView with localized formatted string from application's package's default string table
      *
      * @param resid the resid
      * @return self
@@ -303,7 +299,7 @@ public class ViewHelper {
     /**
      * Set the text of a TextView. Hide the view (gone) if text is empty.
      *
-     * @param text the text
+     * @param text        the text
      * @param goneIfEmpty hide if text is null or length is 0
      * @return self
      */
@@ -316,7 +312,6 @@ public class ViewHelper {
             return text(text);
         }
     }
-
 
 
     /**
@@ -336,7 +331,7 @@ public class ViewHelper {
 
     /**
      * Set progress.
-     * 
+     *
      * @param progress the progress
      * @return self
      */
@@ -349,7 +344,7 @@ public class ViewHelper {
 
     /**
      * Set secondaryProgress.
-     * 
+     *
      * @param secondaryProgress the secondaryProgress
      * @return self
      */
@@ -750,7 +745,6 @@ public class ViewHelper {
     }
 
 
-
     /**
      * Checks if the current view exist.
      *
@@ -775,9 +769,8 @@ public class ViewHelper {
 
     /**
      * Gets the tag of the view.
-     * 
+     *
      * @param id the id
-     * 
      * @return tag
      */
     public Object getTag(int id) {
@@ -978,7 +971,7 @@ public class ViewHelper {
 
     /**
      * Gets the selected item position if current view is an adapter view.
-     *
+     * <p/>
      * Returns AdapterView.INVALID_POSITION if not valid.
      *
      * @return selected position
@@ -1117,7 +1110,6 @@ public class ViewHelper {
     }
 
 
-
     /**
      * Clear a view. Applies to ImageView, WebView, and TextView.
      *
@@ -1146,13 +1138,12 @@ public class ViewHelper {
     }
 
 
-
     /**
      * Set the margin of a view. Notes all parameters are in DIP, not in pixel.
      *
-     * @param leftDip the left dip
-     * @param topDip the top dip
-     * @param rightDip the right dip
+     * @param leftDip   the left dip
+     * @param topDip    the top dip
+     * @param rightDip  the right dip
      * @param bottomDip the bottom dip
      * @return self
      */
@@ -1205,9 +1196,8 @@ public class ViewHelper {
     }
 
     /**
-     * Set the width of a view in dip.
-     * Can also be ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, or
-     * ViewGroup.LayoutParams.MATCH_PARENT.
+     * Set the width of a view in dip. Can also be ViewGroup.LayoutParams.FILL_PARENT,
+     * ViewGroup.LayoutParams.WRAP_CONTENT, or ViewGroup.LayoutParams.MATCH_PARENT.
      *
      * @param dip width in dip
      * @return self
@@ -1219,9 +1209,8 @@ public class ViewHelper {
     }
 
     /**
-     * Set the height of a view in dip.
-     * Can also be ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, or
-     * ViewGroup.LayoutParams.MATCH_PARENT.
+     * Set the height of a view in dip. Can also be ViewGroup.LayoutParams.FILL_PARENT,
+     * ViewGroup.LayoutParams.WRAP_CONTENT, or ViewGroup.LayoutParams.MATCH_PARENT.
      *
      * @param dip height in dip
      * @return self
@@ -1233,12 +1222,11 @@ public class ViewHelper {
     }
 
     /**
-     * Set the width of a view in dip or pixel.
-     * Can also be ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, or
-     * ViewGroup.LayoutParams.MATCH_PARENT.
+     * Set the width of a view in dip or pixel. Can also be ViewGroup.LayoutParams.FILL_PARENT,
+     * ViewGroup.LayoutParams.WRAP_CONTENT, or ViewGroup.LayoutParams.MATCH_PARENT.
      *
      * @param width width
-     * @param dip dip or pixel
+     * @param dip   dip or pixel
      * @return self
      */
 
@@ -1248,12 +1236,11 @@ public class ViewHelper {
     }
 
     /**
-     * Set the height of a view in dip or pixel.
-     * Can also be ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, or
-     * ViewGroup.LayoutParams.MATCH_PARENT.
+     * Set the height of a view in dip or pixel. Can also be ViewGroup.LayoutParams.FILL_PARENT,
+     * ViewGroup.LayoutParams.WRAP_CONTENT, or ViewGroup.LayoutParams.MATCH_PARENT.
      *
      * @param height height
-     * @param dip dip or pixel
+     * @param dip    dip or pixel
      * @return self
      */
 
@@ -1287,7 +1274,6 @@ public class ViewHelper {
     }
 
 
-
     /**
      * Return the context of activity or view.
      *
@@ -1306,13 +1292,11 @@ public class ViewHelper {
 
     /**
      * Starts an animation on the view.
-     * 
-     * <br>
-     * contributed by: marcosbeirigo
-     * 
+     * <p/>
+     * <br> contributed by: marcosbeirigo
+     *
      * @param animId Id of the desired animation.
      * @return self
-     * 
      */
     public ViewHelper animate(int animId) {
         return animate(animId, null);
@@ -1320,15 +1304,12 @@ public class ViewHelper {
 
     /**
      * Starts an animation on the view.
-     * 
-     * <br>
-     * contributed by: marcosbeirigo
-     * 
-     * @param animId Id of the desired animation.
+     * <p/>
+     * <br> contributed by: marcosbeirigo
+     *
+     * @param animId   Id of the desired animation.
      * @param listener The listener to receive notifications from the animation on its events.
      * @return self
-     * 
-     * 
      */
     public ViewHelper animate(int animId, AnimationListener listener) {
         Animation anim = AnimationUtils.loadAnimation(getContext(), animId);
@@ -1338,13 +1319,11 @@ public class ViewHelper {
 
     /**
      * Starts an animation on the view.
-     * 
-     * <br>
-     * contributed by: marcosbeirigo
-     * 
+     * <p/>
+     * <br> contributed by: marcosbeirigo
+     *
      * @param anim The desired animation.
      * @return self
-     * 
      */
     public ViewHelper animate(Animation anim) {
         if (mView != null && anim != null) {
@@ -1355,12 +1334,10 @@ public class ViewHelper {
 
     /**
      * Trigger click event
-     * 
-     * <br>
-     * contributed by: neocoin
-     * 
+     * <p/>
+     * <br> contributed by: neocoin
+     *
      * @return self
-     * 
      * @see View#performClick()
      */
     public ViewHelper click() {
@@ -1372,12 +1349,10 @@ public class ViewHelper {
 
     /**
      * Trigger long click event
-     * 
-     * <br>
-     * contributed by: neocoin
-     * 
+     * <p/>
+     * <br> contributed by: neocoin
+     *
      * @return self
-     * 
      * @see View#performClick()
      */
     public ViewHelper longClick() {
@@ -1393,9 +1368,8 @@ public class ViewHelper {
 
     /**
      * Show a dialog. Method dismiss() or dismissAll() should be called later.
-     * 
+     *
      * @return self
-     * 
      */
     public ViewHelper show(Dialog dialog) {
 
@@ -1404,16 +1378,16 @@ public class ViewHelper {
                 dialog.show();
                 dialogs.put(dialog, null);
             }
-        } catch (Exception e) {}
+        } catch (Exception e) {
+        }
 
         return this;
     }
 
     /**
      * Dismiss a dialog previously shown with show().
-     * 
+     *
      * @return self
-     * 
      */
     public ViewHelper dismiss(Dialog dialog) {
 
@@ -1422,16 +1396,16 @@ public class ViewHelper {
                 dialogs.remove(dialog);
                 dialog.dismiss();
             }
-        } catch (Exception e) {}
+        } catch (Exception e) {
+        }
 
         return this;
     }
 
     /**
      * Dismiss any AQuery dialogs.
-     * 
+     *
      * @return self
-     * 
      */
     public ViewHelper dismiss() {
 
@@ -1442,7 +1416,8 @@ public class ViewHelper {
             Dialog d = keys.next();
             try {
                 d.dismiss();
-            } catch (Exception e) {}
+            } catch (Exception e) {
+            }
             keys.remove();
 
         }
@@ -1488,18 +1463,17 @@ public class ViewHelper {
 
     /**
      * Inflate a view from xml layout.
-     * 
-     * This method is similar to LayoutInflater.inflate() but with sanity checks against the
-     * layout type of the convert view.
-     * 
-     * If the convertView is null or the convertView type doesn't matches layoutId type, a new view
-     * is inflated. Otherwise the convertView will be returned for reuse.
-     * 
+     * <p/>
+     * This method is similar to LayoutInflater.inflate() but with sanity checks against the layout type of the convert
+     * view.
+     * <p/>
+     * If the convertView is null or the convertView type doesn't matches layoutId type, a new view is inflated.
+     * Otherwise the convertView will be returned for reuse.
+     *
      * @param convertView the view to be reused
-     * @param layoutId the desired view type
-     * @param root the view root for layout params, can be null
+     * @param layoutId    the desired view type
+     * @param root        the view root for layout params, can be null
      * @return self
-     * 
      */
     public View inflate(View convertView, int layoutId, ViewGroup root) {
 
@@ -1570,7 +1544,6 @@ public class ViewHelper {
 
     /**
      * Utility methods. Warning: Methods might changed in future versions.
-     *
      */
 
     public static class Utility {
@@ -1596,7 +1569,6 @@ public class ViewHelper {
             }
 
         }
-
 
 
         public static int dip2pixel(Context context, float n) {

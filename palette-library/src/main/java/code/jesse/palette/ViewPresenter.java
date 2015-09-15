@@ -1,5 +1,7 @@
 package code.jesse.palette;
 
+import android.content.Context;
+import android.content.res.Resources;
 import android.view.View;
 
 import code.jesse.palette.tools.ViewHelper;
@@ -65,6 +67,19 @@ public abstract class ViewPresenter implements Presenter {
             mHelper = new ViewHelper(view());
         }
         return mHelper;
+    }
+
+    public Context context() {
+        throwIfIllegalState();
+        return card().mContext;
+    }
+
+    public Resources resources() {
+        return context().getResources();
+    }
+
+    public String getString(int id) {
+        return context().getString(id);
     }
 
     public final boolean hasBind() {

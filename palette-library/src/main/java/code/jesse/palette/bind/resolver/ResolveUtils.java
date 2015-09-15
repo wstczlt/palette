@@ -1,9 +1,9 @@
 package code.jesse.palette.bind.resolver;
 
 
-import code.jesse.palette.util.JavaCalls;
-
 import java.util.List;
+
+import code.jesse.palette.tools.JavaCalls;
 
 /**
  * @author zhulantian@gmail.com

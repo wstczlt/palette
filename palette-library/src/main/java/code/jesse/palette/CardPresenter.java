@@ -1,5 +1,6 @@
 package code.jesse.palette;
 
+import android.content.Context;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
@@ -42,12 +43,20 @@ public final class CardPresenter implements Presenter {
     public static final int CARD_ID = 0;
     private static final String LOG_TAG = "Presenter";
 
-    private final View mView;
+    public final View mView;
+    public final Context mContext;
+
     private final ViewHelper mHelper;
     private final SparseArray<ViewPresenter> mPresenters;
 
+    /**
+     * 当前使用的model对象，每次bind都会被重新赋值, unbind会置空.
+     */
+    public Object mModel;
+
     public CardPresenter(View view) {
         mView = view;
+        mContext = view.getContext();
         mHelper = new ViewHelper(mView);
         mPresenters = new SparseArray<>();
     }
@@ -64,6 +73,7 @@ public final class CardPresenter implements Presenter {
      * @see Presenter
      */
     public void bind(Object model) {
+        this.mModel = model;
         // bind elements
         for (int i = 0; i < mPresenters.size(); ++i) {
             Presenter presenter = find(i);
@@ -77,6 +87,7 @@ public final class CardPresenter implements Presenter {
      * 方法或解绑整张卡片上的所有Presenter.
      */
     public void unbind() {
+        this.mModel = null;
         for (int i = 0; i < mPresenters.size(); ++i) {
             Presenter presenter = find(i);
             if (presenter != null) {
