@@ -7,7 +7,7 @@ Palette设计的目的是提高MVP模式中Presenter的复用性，概念可以�
 
 **MVP介绍**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在客户端的开发中，为了逻辑上的解耦，我们通常希望将数据层(M)、界面层(V)、控制逻辑(C)进行分离，也即我们通常所说的MVC模式，MVC模式的优点是三层逻辑之间是解耦的，每一层都可以单独的开发和测试。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在客户端的开发中，为了逻辑上的解耦，我们通常希望将数据层(M)、界面层(V)、控制逻辑(C)进行分离，也即我们通常所说的MVC模式，MVC模式的优点是三层逻辑之间是解耦的，每一层都可以单独的开发和测试。<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android中Activity/Fragment充当了Controller的角色，但由于Activity是一个比较大的组件，他兼具着处理界面(例如ActionBar)、处理各类系统事件(生命周期、消息等)，实际使用中如果还要把整个界面的控制逻辑写在Activity中，就会使得Activity显得非常的臃肿。此时，我们单独把Controller中与界面展现相关的代码剥离出来，于是产生了Presenter。Presenter单纯只用来控制界面显示，它是Activity/Fragment(Controller)的一个部分。
 	
 Example：用户详情界面
