@@ -32,7 +32,7 @@ Example:
 
 > 例如，一个View既要响应点击之后下载一个App的事件，同时还要显示App下载时的进度，你可以将Click写成一个ViewPresneter，将显示进度的逻辑写成另一个ViewPresenter，并把这两个ViewPresenter都设置给该View。这样的好处是，如果有其它的View只需要响应下载事件而不需要进度，此时可以直接复用。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;综上，Presenter的拆分是灵活的，原则是可预见的需要复用的先拆分，其它的尽可能合并，直到发现需要复用其中部分逻辑的时候，把这部分逻辑再拆分出去。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;综上，Presenter的拆分是灵活的，原则是可预见的需要复用的先拆分，其它的尽可能合并，直到发现需要复用其中部分逻辑的时候，把这部分逻辑再拆分出去。<br/>
 
 **Data-Binding支持**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Palette是为了提高Presenter的可复用性，因此在应对通用(简单)的Bind需求时需要更简单通用一些。
