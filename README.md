@@ -34,3 +34,4 @@ Example:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;综上，Presenter的拆分是灵活的，原则是可预见的需要复用的先拆分，其它的尽可能合并，直到发现需要复用其中部分逻辑的时候，把这部分逻辑再拆分出去。<br/>
 
+** 更详细的内容请查看文档https://github.com/wstczlt/palette/blob/master/wiki/%5BTech%20Design%5D%20%E7%95%8C%E9%9D%A2%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6palette(MVPs).pdf **
